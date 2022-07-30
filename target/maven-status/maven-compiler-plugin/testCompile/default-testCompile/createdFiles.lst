@@ -1,0 +1,4 @@
+RunCucumberTest.class
+steps\Hooks.class
+steps\SignInPageDef.class
+steps\BasicPageDef.class
