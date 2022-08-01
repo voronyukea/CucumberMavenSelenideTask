@@ -4,7 +4,6 @@ import com.codeborne.selenide.Selenide;
 import io.cucumber.java.en.Then;
 import pages.BasicPage;
 
-
 public class BasicPageDef {
 
     BasicPage basicPage = new BasicPage();
@@ -56,4 +55,17 @@ public class BasicPageDef {
     public void checkUserdataAfterFirstSorting() {
         basicPage.checkUserDataAfterFirstSort();
     }
+
+    @Then("Apple second sort on a column {string}")
+    public void appleSecondSortOnAColumn(String arg0) {
+        basicPage.clickAclassElement(arg0);
+        Selenide.sleep(3000);
+
+    }
+    @Then("Check userdata after second sorting")
+    public void checkUserdataAfterSecondSorting() {
+        basicPage.checkUserDataAfterSecondSort();
+    }
+
+
 }

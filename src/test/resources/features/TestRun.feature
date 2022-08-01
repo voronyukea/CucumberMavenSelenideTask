@@ -11,3 +11,5 @@ Feature: Auth, enter to users menu, check sort
     Then Save userdata before sorting
     Then Apple first sort on a column "Username"
     Then Check userdata after first sorting
+    Then Apple second sort on a column "Username"
+    Then Check userdata after second sorting
